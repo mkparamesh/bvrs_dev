@@ -9,7 +9,8 @@ BV Reddy School
     - GIT
 
 # Step 1
-    - Add ssh-key to your gitlab account [https://docs.gitlab.com/ee/user/ssh.html]
+    - Add ssh-key to your gitlab account 
+    https://docs.gitlab.com/ee/user/ssh.html
     - clone the existing_repository
 
 # Step 2
