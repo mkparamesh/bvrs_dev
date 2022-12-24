@@ -1,0 +1,42 @@
+.navbar a {
+    text-decoration: none;
+}
+
+.home .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.header {
+    background-color: white;
+}
+
+.home .content {
+    color: white;
+    margin-left: 12rem;
+}
+
+.home .content p {
+    max-width: 38rem;
+    font-size: 3rem;
+}
+
+.home .content h3 {
+    font-size: 1.8rem;
+}
+
+.about .image {
+    flex: unset;
+}
+
+.about .image img {
+    box-shadow: none;
+    width: 23rem;
+}
