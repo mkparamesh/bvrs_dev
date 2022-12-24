@@ -1,0 +1,19 @@
+.navbar a {
+    text-decoration: none;
+}
+
+.home .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60rem;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.header {
+    background-color: white;
+}
