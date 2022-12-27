@@ -38,9 +38,9 @@
             <a href="contact-us/contact-us.html">Contact us</a>
         </nav>
 
-        <div class="icons d-none">
+        <div class="icons d-block d-lg-none">
             <div id="menu-btn" class="fas fa-bars"></div>
-            <a href="#" class="fas fa-user"></a>
+            <a href="#" class="fas fa-user d-none"></a>
             <div id="search-btn"></div>
         </div>
 
@@ -106,6 +106,7 @@
 
             </div>
 
+            <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
 
@@ -169,6 +170,38 @@
 
     </section>
 
+    <section class="about">
+
+        <div class="d-none d-lg-flex flex-row w-100 justify-content-evenly align-items-center">
+
+            <img data-aos="fade-right" src="images/principal.JPG" alt="Image" class="principal-image">
+            <div data-aos="fade-left" class="d-flex flex-column align-items-center quote-div">
+                <blockquote> Engaging them in an effective teaching based on our core values and providing them the
+                    best up to date education practices which enable students of our school, to achieve their academic
+                    ambitions and lifetime careers. At the same time, we nurture their individual talents and
+                    emphasize on the importance of educating the whole child with attention to their physical,
+                    emotional and social development.</blockquote>
+                <cite> - Aldous Huxley</cite>
+            </div>
+
+        </div>
+
+        <div class="d-flex d-lg-none flex-column w-100 align-items-center">
+
+            <img data-aos="fade-right" src="images/principal.JPG" alt="Image" class="principal-image">
+            <div data-aos="fade-left" class="d-flex flex-column align-items-center mt-5">
+                <blockquote> Engaging them in an effective teaching based on our core values and providing them the
+                    best up to date education practices which enable students of our school, to achieve their academic
+                    ambitions and lifetime careers. At the same time, we nurture their individual talents and
+                    emphasize on the importance of educating the whole child with attention to their physical,
+                    emotional and social development.</blockquote>
+                <cite> - Aldous Huxley</cite>
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- category section ends -->
 
     <!-- about section starts  -->
@@ -199,7 +232,7 @@
 
     <!-- packages section starts  -->
 
-    <section class="packages" id="packages">
+    <section class="packages d-none" id="packages">
 
         <h1 class="heading">Faculty</h1>
 
@@ -382,7 +415,7 @@
 
     <!-- services section starts  -->
 
-    <section class="services bg-white">
+    <section class="services d-none bg-white">
 
         <h1 class="heading"> what we offer </h1>
 
@@ -557,12 +590,11 @@
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="#home">home</a>
-                <a href="#about">about</a>
-                <a href="#shop">Gallery</a>
-                <a href="#packages">Admissions</a>
-                <a href="#reviews">Contact us</a>
-                <a href="#blogs">School Timings - 9am-5pm</a>
+                <a href="index.html">home</a>
+                <a href="about-us/about-us.html">about</a>
+                <a href="gallery/gallery.html">Gallery</a>
+                <a href="contact-us/contact-us.html">Contact us</a>
+                <a href="">School Timings - 9am-5pm</a>
             </div>
 
             <div class="box">
@@ -598,6 +630,9 @@
 
     <!-- footer section ends -->
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 

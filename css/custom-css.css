@@ -1,3 +1,7 @@
 .navbar a {
     text-decoration: none;
 }
+
+.home-slider .swiper-slide {
+    height: 65rem;
+}

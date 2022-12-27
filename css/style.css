@@ -88,10 +88,16 @@ section {
   font-size: 2.5rem;
   color: #10221b;
   font-weight: bolder;
+  width: 4rem;
+  height: 4rem;
 }
 
 .header .logo i {
   color: #219150;
+}
+
+.logo+h1 {
+  font-size: 3rem;
 }
 
 .header .navbar a {
@@ -273,8 +279,8 @@ section {
 .category .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  -ms-grid-columns: (minmax(30%, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   gap: 1.5rem;
 }
 
@@ -769,6 +775,57 @@ section {
   margin-right: 1rem !important;
 }
 
+.footer .box a {
+  text-decoration: none !important;
+}
+
+.principal-image {
+  height: 40rem;
+}
+
+.quote-div {
+  max-width: 50%;
+  margin-left: 5rem;
+}
+
+blockquote {
+  font-weight: 100;
+  font-size: 2rem;
+  max-width: 600px;
+  line-height: 1.4;
+  position: relative;
+  margin: 0;
+  padding: .5rem;
+}
+
+blockquote::before,
+blockquote::after {
+  position: absolute;
+  color: #000;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
+  font-family: Georgia, serif;
+}
+
+blockquote::before {
+  content: '“';
+  left: -4rem;
+  top: -2rem;
+}
+
+blockquote::after {
+  content: '”';
+  right: 4rem;
+  bottom: 1rem;
+}
+
+cite {
+  font-size: 1.8rem;
+  line-height: 3;
+  text-align: left;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 2rem;
@@ -776,6 +833,24 @@ section {
 
   section {
     padding: 3rem 2rem;
+  }
+
+  body {
+    overflow-x: hidden
+  }
+
+  .principal-image {
+    height: 26rem;
+  }
+
+  blockquote {
+    margin-left: 5rem !important;
+    font-size: 1.6rem;
+  }
+
+  .category .box-container {
+    -ms-grid-columns: (minmax(40%, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
 }
 
@@ -810,6 +885,21 @@ section {
 
   .home .box .content h3 {
     font-size: 4rem;
+  }
+
+  body {
+    overflow-x: hidden
+  }
+
+  blockquote {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .category .box-container {
+    -ms-grid-columns: (minmax(40%, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
 }
 
@@ -863,6 +953,25 @@ section {
   .swiper-button-prev::after {
     display: none;
   }
+
+  .header {
+    width: 100vw;
+  }
+
+  body {
+    overflow-x: hidden
+  }
+
+  blockquote {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-size: 1.8rem;
+  }
+
+  .category .box-container {
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 }
 
 @media (max-width: 450px) {
@@ -870,9 +979,40 @@ section {
     font-size: 50%;
   }
 
+  .header {
+    width: 100vw;
+  }
+
   .heading {
     font-size: 3rem;
   }
-}
 
-/*# sourceMappingURL=style.css.map */
+  .principal-image {
+    height: 27rem;
+  }
+
+  .header .navbar.active a {
+    color: black !important;
+  }
+
+  .header .navbar.active {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+
+  blockquote {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+  }
+
+  body {
+    overflow-x: hidden
+  }
+
+  .category .box-container {
+    -ms-grid-columns: (minmax(100%, 1fr))[auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}

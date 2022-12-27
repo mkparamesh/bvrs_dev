@@ -14,6 +14,12 @@
     background-position: center !important;
 }
 
-.header {
-    background-color: white;
+.header,
+.header nav a {
+    color: white !important;
+}
+
+.header.active,
+.header.active nav a {
+    color: #000 !important;
 }

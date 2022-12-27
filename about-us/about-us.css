@@ -14,8 +14,14 @@
     background-position: center !important;
 }
 
-.header {
-    background-color: white;
+.header,
+.header nav a {
+    color: white !important;
+}
+
+.header.active,
+.header.active nav a {
+    color: #000 !important;
 }
 
 .home .content {
@@ -39,4 +45,43 @@
 .about .image img {
     box-shadow: none;
     width: 23rem;
+}
+
+ul li {
+    list-style-type: disc;
+    font-size: 1.4rem;
+    margin: 0px;
+    padding: 0.5rem 0rem;
+    margin-left: 5rem;
+}
+
+.content-margin-right {
+    margin-right: 2rem;
+}
+
+.content-margin-left {
+    margin-left: 2rem;
+}
+
+@media (max-width: 450px) {
+    .home .slide {
+        height: 40rem;
+    }
+
+    .home .content p {
+        font-size: 1.6rem;
+    }
+
+    .home .content {
+        margin-left: 5rem;
+    }
+
+    .about .image {
+        display: none;
+    }
+
+    .content-margin-right,
+    .content-margin-left {
+        margin: 0rem;
+    }
 }

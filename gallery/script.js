@@ -32,6 +32,7 @@ window.onload = () => {
   }
 };
 
+window.scrollTo(0, 0);
 
 var swiper = new Swiper(".home-slider", {
   loop: true,
@@ -42,7 +43,11 @@ var swiper = new Swiper(".home-slider", {
   },
   autoplay: {
     delay: 3000,
-  }
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+  },
 });
 
 // import lightGallery from 'lightgallery';
